@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body {
+      text-align: center;
+      background: #ffc170;
+      padding: 0;
+      margin: 0;
+    }
+
+    #popupContainer {
+      padding:  0em;
+      width: 310px;
+      height: 150px;
+      border-radius: 100px;
+    }
+
+    #x {
+      height: 500px;
+      width: 500px;
+      display: none;
+    }
+
+    .icons {
+      width: 120px;
+      height: 120px;
+      display: inline-block;  
+    }
+
+    .btns {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      margin: 15px;
+    }
+
+    .btns:hover {
+      width: 110px;
+      height: 110px;
+    }
+
+    #working, #paused {
+      display: none;
+      padding: .5em;
+    }
+
+    #icon-container {
+      padding: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="popupContainer">
+    <!-- <div id="x" value="m">Some thing</div> -->
+    <!-- <button id="workBtn" class="btns btn btn-sm btn-outline-warning">Work Page</button> -->
+    <div id="icon-container">
+        <img
+        class="btns"
+        src="http://files.cdn.spilcloud.com/trollfacememes/1503046239_trollfacememes-dancer.png"
+        id="workBtn" alt="">
+
+      <img class="btns" src="http://files.cdn.spilcloud.com/trollfacememes/1503046239_trollfacememes-maaad.png" id="pauseBtn" alt="">
+    </div>
+    
+    <div style="background: #FFF; width: 310px">
+      <p id="working">
+          <strong>Page saved.</strong>
+          <br>
+          You will <strong><u>never escape</u></strong>. Muahahahaah
+        </p>
+        <p id="paused">
+          You are free.. For now.
+        </p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
